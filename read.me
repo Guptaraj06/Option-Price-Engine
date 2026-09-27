@@ -1,0 +1,17 @@
+Main Points 
+
+1.Built a production-grade options pricing engine implementing Black-Scholes analytically,
+Monte Carlo with antithetic variates and control variate variance reduction (86% variance reduction using geometric Asian as control for arithmetic Asian), 
+and Crank-Nicolson finite difference PDE solver achieving 4-decimal-place agreement with Black-Scholes benchmarks
+
+2. Derived and implemented the Heston stochastic volatility model's characteristic function for  call pricing via Carr-Madan FFT; 
+calibrated 5 Heston parameters to SPY options surface across 4 expiries using nonlinear least-squares, achieving RMSE of 1.2 vol points
+
+3.Computed full Greeks analytically (delta, gamma, vega, theta, rho, vanna, volga, charm) and verified via central-difference. 
+
+4.Constructed implied volatility surface from SPY options chain using Newton-Raphson inversion; 
+implemented SVI parametrization  for arbitrage-free surface interpolation with butterfly and calendar spread arbitrage checks;
+
+
+
+

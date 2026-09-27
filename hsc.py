@@ -69,6 +69,6 @@ class HestonCalibrator:
         rmse_iv = np.sqrt((result.fun**2).mean())
         print(f"Calibration RMSE: {rmse_iv*100:.3f} vol points")
         print(f"Feller condition: {'satisfied' if feller else 'VIOLATED'}")
-        print(f"Fitted: κ={kappa:.3f} θ={theta:.4f} ξ={xi:.3f} ρ={rho:.3f} v₀={v0:.4f}")
+        print(f"Fitted: {kappa:.3f} {theta:.4f} {xi:.3f} {rho:.3f} {v0:.4f}")
 
         return fitted
